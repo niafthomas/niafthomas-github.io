@@ -1,6 +1,7 @@
-<!DOCTYPE html>
-
-<!-- Nia Thomas, Data Science 2021 -->
+<!--------------------------------------------------------------------------
+Nia Thomas, Data Science 2021
+Portfolio and Home Page
+--------------------------------------------------------------------------->
 
 
 <!DOCTYPE html>
@@ -10,24 +11,28 @@
 
 <head>
 
+  <!-- Title -->
+<h1>Data Science 2021</h1>
+<h2>Nia Thomas | Student Number:1851280<span style="color: rgb(202, 213, 223); font-weight: 500;",h2>
+</header>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+
+<!-- CSS -->
+<link rel="stylesheet" href="styles.css">
+
+
+<!--Favicon-->
+<link rel="shortcut icon" type="image/png" href="favicon/favicon.ico">
 
 <!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 
-<!-- CSS -->
-<link rel="stylesheet" href="styles.css">
 
-<!-- Title -->
-<h1>Data Science</h1>
-
-<!--Favicon-->
-<link rel="shortcut icon" href="favicon/favicon.ico">
-
-</head>
-
-<!-- ///////////////////  HEAD //////////////////////////////////// -->
+<!-- /////////////////// END HEAD //////////////////////////////////// -->
 
 
 
@@ -36,31 +41,44 @@
 
 <body>
 
-  <div class="navbuttons">
-    <button class="button" style="vertical-align:middle" onclick="location.href='index.html'"><span>Portfolio </span></button>
-    <button class="button" style="vertical-align:middle" onclick="location.href='project.html'"><span>Project </span></button>
-    <button class="button" style="vertical-align:middle" onclick="location.href='https://github.com/niafthomas/niafthomas.github.io'"><span>Github </span></button>
-    <button class="button" style="vertical-align:middle" onclick="location.href='https://rapidcharts.io/datascience'"><span>Course Site </span></button>
+<!--Navigation bar and title-->
+<container class="hcontainer">
+
+<!-- /////////////////// NAVIGATION BUTTONS //////////////////////////////////// -->
+<container class="hcontainer" style="border-bottom: none;">
+<div class="multi-button">
+
+  <button class="button" style="vertical-align:middle" onclick="location.href='index.html'"><span>Portfolio </span></button>
+  <button class="button" style="vertical-align:middle" onclick="location.href='project.html'"><span>Project </span></button>
+  <button class="button" style="vertical-align:middle" onclick="location.href='https://github.com/niafthomas/niafthomas.github.io'"><span>Github </span></button>
+  <button class="button" style="vertical-align:middle" onclick="location.href='https://rapidcharts.io/datascience'"><span>Course Site </span></button>
     
 
-  </div>
+</div>
 
-  <p class=title1 style="font-weight: 300;">By Nia Thomas</p>
+</container>
 
-  <p class=title2><span style="font-weight: 700; color: #fff">Week 1</span> - Getting Started</p>
-
-</container class="week1">
+<!-- /////////////////// END NAVIGATION BUTTONS //////////////////////////////////// -->
 
 
-<!--Chart 1 -->
+
+<!-- /////////////////// CONTAINERS WITH WEEK 1 WORK //////////////////////////////////// -->
+
+<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 500;">Week 1: </span>Getting Started</p>
+
+<container class="week1">
+
+<!--Chart 1 showing UK COVID cases by Region-->
   <div class="chart" id="chart1">
       <script>
         var myChart1 = "chart1_covidUKRegions.json";
         vegaEmbed('#chart1', myChart1);
       </script>
   </div>
+  
+  <container class="bcontainer">
 
-<!--Chart 2 -->
+<!--Chart 2 showing UK productivity levels over time-->
 <div class="chart" id="chart2">
     <script>
       var myChart2 = "chart2_ukProductivity.json";
@@ -79,7 +97,13 @@
 
 </container>
 
-<p class=title2><span style="font-weight: 700; color: #fff">Week 2 </span> - Introduction to APIs</p>
+<!-- /////////////////// END CONTAINER WITH WEEK 1 WORK //////////////////////////////////// -->
+
+
+
+<!-- ///////////////////  CONTAINER WITH WEEK 2 WORK //////////////////////////////////// -->
+
+<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 500;">Week 2: </span> - Introduction to APIs</p>
 
 <container class="week2">
 
@@ -98,7 +122,15 @@
     vegaEmbed('#chart5', myChart5);
   </script>
 </div>
+
+</container>
   
+<!-- ///////////////////  END CONTAINER WITH WEEK 2 WORK //////////////////////////////////// -->
+
+
+
+<!-- ///////////////////  CONTAINER WITH WEEK 3 WORK /////////////////////////////////////// -->
+
 </body>
 <!-- ///////////////////  END BODY //////////////////////////////////// -->
 
