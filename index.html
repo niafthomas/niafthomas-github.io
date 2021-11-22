@@ -10,14 +10,20 @@
 
 <head>
 
+
 <!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 
+<!-- CSS -->
+<link rel="stylesheet" href="styles.css">
+
 <!-- Title -->
 <h1>Data Science</h1>
 
+<!--Favicon-->
+<link rel="shortcut icon" href="favicon/favicon.ico">
 
 </head>
 
@@ -31,6 +37,7 @@
 <body>
 
   <div class="navbuttons">
+    <button class="button" style="vertical-align:middle" onclick="location.href='index.html'"><span>Portfolio </span></button>
     <button class="button" style="vertical-align:middle" onclick="location.href='project.html'"><span>Project </span></button>
     <button class="button" style="vertical-align:middle" onclick="location.href='https://github.com/niafthomas/niafthomas.github.io'"><span>Github </span></button>
     <button class="button" style="vertical-align:middle" onclick="location.href='https://rapidcharts.io/datascience'"><span>Course Site </span></button>
@@ -38,9 +45,12 @@
 
   </div>
 
-</container>
+  <p class=title1 style="font-weight: 300;">By Nia Thomas</p>
 
-<p class=title2><span class="bold">Week 1: Getting Started</span></p>
+  <p class=title2><span style="font-weight: 700; color: #fff">Week 1</span> - Getting Started</p>
+
+</container class="week1">
+
 
 <!--Chart 1 -->
   <div class="chart" id="chart1">
@@ -69,7 +79,9 @@
 
 </container>
 
-  <p class=title2><span class="bold">Week 2: Introduction to APIs</span></p>
+<p class=title2><span style="font-weight: 700; color: #fff">Week 2 </span> - Introduction to APIs</p>
+
+<container class="week2">
 
 <!--Chart 4 -->
 <div class="chart" id="chart4">
