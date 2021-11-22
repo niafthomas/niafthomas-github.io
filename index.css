@@ -59,3 +59,9 @@ p{color:rgb(203, 221, 224);
    padding: 20px;
    display: inline-block;
 }
+
+/* Button Format */
+
+.button-56, .button-1{
+   align-items: center;
+   margin: 10px;
