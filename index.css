@@ -26,6 +26,7 @@ h2{
    font-family: 'Roboto', sans-serif;
    line-height: 0; 
    text-align: center;
+}
 
 h3{
    color: rgb(219, 188, 188);
@@ -54,7 +55,6 @@ p{color:rgb(203, 221, 224);
    align-items: center;
    padding-top: 70px;
    padding-bottom: 70px;
-@@ -71,12 +70,11 @@ p{
    border-radius: 5px;
    padding: 20px;
    display: inline-block;
@@ -65,3 +65,5 @@ p{color:rgb(203, 221, 224);
 .button-56, .button-1{
    align-items: center;
    margin: 10px;
+
+}
