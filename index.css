@@ -2,8 +2,14 @@
 body{
 
    background-color: #122b39 ;
-   max-width: 1920;
-    margin: 1080;
+   max-width: 90%;
+   margin: auto;
+
+   animation: fadeIn ease 2s;
+   -webkit-animation: fadeIn ease 2s;
+   -moz-animation: fadeIn ease 2s;
+   -o-animation: fadeIn ease 2s;
+   -ms-animation: fadeIn ease 2s;  
 }
 
 footer {
