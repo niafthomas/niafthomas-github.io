@@ -2,35 +2,60 @@
 body{
 
    background-color: #122b39 ;
-   max-width: 450px;
-   margin: auto;
+   max-width: 1920;
+    margin: 1080;
+}
+
+footer {
+   height: 100px
 }
 
 h1{
 
    color: rgb(219, 188, 188);
    font-family: 'Poppins', sans-serif ;
+   font-size: 75px; 
+    font-weight: bold;
+    letter-spacing: -1px; 
+    line-height: 1; 
+    text-align: center;
 }
+
+h2{
+   color:rgb(203, 221, 224);
+   font-family: 'Roboto', sans-serif;
+   line-height: 0; 
+   text-align: center;
 
 h3{
-   color: #f4c245;
+   color: rgb(219, 188, 188);
    font-family: 'Poppins', sans-serif ;
+   letter-spacing: 1.5px;
+   font-size: 20px;
+   line-height: 1; 
+   text-transform: uppercase;
+   text-align: center;
 }
 
-p{font-family: 'Poppins', sans-serif;
-color: white;
+p{color:rgb(203, 221, 224);
+   font-family: 'Roboto', sans-serif;
+   line-height: 1; 
+   text-align: justify;
+   text-align-last: center;
+   text-align: center;
+   display: block;
+   max-width: 960px;
 }
 
-
-
-.chart{
-   width: 400px;
-   border-width: 10px;
-   background-color: white);
-   border-style: solid;
+/* Chart Format */
+.chart-container {
+   display: inline-block;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 70px;
+   padding-bottom: 70px;
+@@ -71,12 +70,11 @@ p{
    border-radius: 5px;
-   border-color: white;
-   margin: auto;
-
-
+   padding: 20px;
+   display: inline-block;
 }
