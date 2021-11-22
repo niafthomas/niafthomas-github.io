@@ -4,12 +4,6 @@ body{
    background-color: #122b39 ;
    max-width: 90%;
    margin: auto;
-
-   animation: fadeIn ease 2s;
-   -webkit-animation: fadeIn ease 2s;
-   -moz-animation: fadeIn ease 2s;
-   -o-animation: fadeIn ease 2s;
-   -ms-animation: fadeIn ease 2s;  
 }
 
 footer {
@@ -35,23 +29,19 @@ h2{
 }
 
 h3{
-   color: rgb(219, 188, 188);
-   font-family: 'Poppins', sans-serif ;
-   letter-spacing: 1.5px;
+   color:rgb(203, 221, 224);
+   font-family: 'Roboto', sans-serif;
    font-size: 20px;
-   line-height: 1; 
-   text-transform: uppercase;
+   line-height: 0; 
    text-align: center;
 }
 
-p{color:rgb(203, 221, 224);
+h4{
+   color:rgb(203, 221, 224);
    font-family: 'Roboto', sans-serif;
-   line-height: 1; 
-   text-align: justify;
-   text-align-last: center;
+   font-size: 20px;
+   line-height: 0; 
    text-align: center;
-   display: block;
-   max-width: 960px;
 }
 
 /* Chart Format */
@@ -64,12 +54,4 @@ p{color:rgb(203, 221, 224);
    border-radius: 5px;
    padding: 20px;
    display: inline-block;
-}
-
-/* Button Format */
-
-.button-56, .button-1{
-   align-items: center;
-   margin: 10px;
-
 }
