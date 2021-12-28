@@ -36,13 +36,6 @@ h3{
    text-align: center;
 }
 
-h4{
-   color:rgb(203, 221, 224);
-   font-family: 'Roboto', sans-serif;
-   font-size: 20px;
-   line-height: 0; 
-   text-align: center;
-}
 
 /* Chart Format */
 .chart-container {
