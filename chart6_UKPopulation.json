@@ -39,6 +39,7 @@
       "y": {
         "field": "y",
         "type": "quantitative",
+        "scale": {"domain": [55000000, 70000000]},
         "title": "Estimated Mid-Year Population",
         "axis": {"grid": false}
       },
