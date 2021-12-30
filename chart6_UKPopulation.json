@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    
+    "title": {
+      "text": "Population of the United Kingdom from 2000 to 2020",
+      "subtitle":"Graph generated using JSO notation, Source: ONS",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+     "data": {
+      "values": [
+          {"x": "2000", "y": 58886100}, 
+          {"x": "2005", "y": 60413300}, 
+          {"x": "2010", "y": 62759500},
+          {"x": "2015", "y": 65110000},
+          {"x": "2020", "y": 67081000}
+      ]
+    },
+  
+   
+    "height": 300,
+    "width": 310,
+     
+    "mark": {"type": "line", "point": false, "color": "indianred"},
+   
+   
+    "encoding": {
+  
+      "x": {
+        "field": "x",
+        "type": "temporal",
+        "title": "Year",
+        "axis": {"grid": false}
+      },
+  
+      "y": {
+        "field": "y",
+        "type": "quantitative",
+        "title": "Estimated Mid-Year Population",
+        "axis": {"grid": false}
+      },
+  
+      "color": {
+        "field": "",
+        "type": "nominal",
+        "scale": {"scheme": "set1"},
+        "title": "Area",
+        "legend": {
+          "orient": "top-left", 
+          "fillColor": "transparent"}
+      }
+
+  }
+}
