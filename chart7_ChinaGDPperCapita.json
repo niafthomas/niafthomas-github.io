@@ -1,0 +1,54 @@
+{
+
+
+    
+  "title": {
+    "text": "China GDP per Capita (current US$) between 1980 and 2020",
+    "subtitle":"Source: World Bank",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  
+   "data": {
+    "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/ChinaGDPperCapita.csv",
+    "format": {"type": "csv"}
+  },
+
+  
+  "height": 300,
+  "width": 310,
+   
+  "mark": {"type": "line", "point": false, "color": "indianred"},
+ 
+  "encoding": {
+
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {"grid": false}
+    },
+
+    "y": {
+      "field": "GDP per capita (current US$)",
+      "type": "quantitative",
+      "title": "GDP per capita, $",
+      "axis": {"grid": false}
+    },
+
+    "color": {
+      "field": "",
+      "type": "nominal",
+      "scale": {"scheme": "set1"},
+      "title": "Areas",
+      "legend": {
+        "orient": "top-left", 
+        "fillColor": "transparent"}
+    }
+
+
+  }
+
+}
