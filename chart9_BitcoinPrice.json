@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    
+    "title": {
+      "text": "Bitcoin Price",
+      "subtitle": "Price at Close (USD), Source: CoinAPI",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+     "data": {
+      "url": "https://rest.coinapi.io/v1/exchangerate/BTC/USD/history?period_id=4hrs&time_start=2018-01-01T00:00:00&time_end=2020-01-01T00:00:00&apikey=BC852D0B-E5CF-4E6E-AA5F-456B8C35F218",
+      "format": {"type": "json", "property": "data"}
+    },
+  
+    "height": 300,
+    "width": "container",
+     
+    "mark": {"type": "line", "point": false, "color":"red"},
+   
+    "encoding": {
+  
+      "x": {
+        "field": "time_period_start",
+        "type": "temporal",
+        "title": null,
+        "axis": {"grid": false}
+      },
+  
+      "y": {
+        "field": "rate_close",
+        "type": "quantitative",
+        "title": null,
+        "axis": {"grid": false}
+      }
+  }
+  }
