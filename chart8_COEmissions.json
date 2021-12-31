@@ -1,9 +1,18 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "description": "Emissions data using satellite imagary",
   
-  "data": {"url": "https://api.v2.emissions-api.org/api/v2/carbonmonoxide/average.json?country=us&begin=2019-02-01&end=2022-07-01"},
+    "title": {
+        "text": "Average US Carbon Monoxide Emissions",
+        "anchor": "start",
+        "color": "black",
+        "subtitle": "Average Daily CO Emissions, Source: emissions.api.org",
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "subtitleColor": "black"
+    },
+  
+  "data": {"url": "https://api.v2.emissions-api.org/api/v2/carbonmonoxide/average.json?country=us&begin=2018-01-01&end=2021-12-01"},
 
   "mark":{
     "type": "circle",
@@ -25,8 +34,8 @@
     "y": {
       "field": "average", 
       "type": "quantitative",
-      "scale": {"domain": [0.02, 0.045]},
-      "title":null
+      "title": "Carbon Monoxide (Mol/M^2)",
+      "scale": {"domain": [0.02, 0.05]}
       },
 
     "color":{
