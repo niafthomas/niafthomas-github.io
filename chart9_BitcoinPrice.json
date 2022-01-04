@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
   "title": {
-    "text": "Bitcoin Price",
+    "text": "Bitcoin Price in January 2019",
     "subtitle": "Price at High (USD), Source: CoinAPI",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -12,14 +12,14 @@
 
 
  "data": {
-  "url": "https://rest.coinapi.io/v1/exchangerate/BTC/USD/history?period_id=4hrs&time_start=2018-01-01T00:00:00&time_end=2020-01-01T00:00:00&apikey=BC852D0B-E5CF-4E6E-AA5F-456B8C35F218"
+  "url": "https://rest.coinapi.io/v1/exchangerate/BTC/USD/history?period_id=4hrs&time_start=2019-01-01T00:00:00&time_end=2019-01-18T00:00:00&apikey=BC852D0B-E5CF-4E6E-AA5F-456B8C35F218"
 },
 
 
 "height": 300,
 "width": 310,
  
-"mark": {"type": "line", "point": false, "color":"mediumpurple"},
+"mark": {"type": "line", "point": false, "color":"orangered"},
 
 "encoding": {
 
@@ -33,7 +33,7 @@
   "y": {
     "field": "rate_high",
     "type": "quantitative",
-    "scale": {"domain": [8000, 18000]},
+    "scale": {"domain": [3000, 5000]},
     "title": null,
     "axis": {"grid": false}
   },
