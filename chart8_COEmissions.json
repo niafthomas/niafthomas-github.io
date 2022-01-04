@@ -41,7 +41,7 @@
     "color":{
       "field":"end", 
       "timeUnit":"year", 
-      "scale": {"scheme": "inferno"}
+      "scale": {"scheme": "turbo"}
     }
   }
 }
