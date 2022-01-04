@@ -36,11 +36,7 @@
     "scale": {"domain": [3000, 5000]},
     "title": null,
     "axis": {"grid": false}
-  },
-
-  "color": {
-    "type": "nominal",
-    "scale": {"scheme": "set1"}
+  
   }
 }
 }
