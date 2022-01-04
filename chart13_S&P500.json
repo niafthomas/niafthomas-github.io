@@ -1,15 +1,15 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "Japanese Yen to U.S. Dollar Spot Exchange Rate",
+    "description": "S&P 500 Index",
     "title": {
-        "text": "Japanese Yen to U.S. Dollar Spot Exchange Rate",
+        "text": "S&P 500 Index",
         "subtitle": "Source: FRED",
         "subtitleFontStyle": "italic",
         "subtitleFontSize": 10,
         "anchor": "start"
     },
     "data": {
-        "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/data-Fred-DEXJPUS.json",
+        "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/data-Fred-SP500.json",
         "format": {
             "type": "json",
             "property": "observations"
@@ -36,12 +36,10 @@
             "field": "value",
             "type": "quantitative",
             "title": "",
-            "scale": {
-                "domain": [0,400]
+            "scale": {"domain": [0,5500]
             },
             "axis": {
                 "grid": false,
-                "format": "0s",
                 "labelSeparation": 0
             }
         },
@@ -50,7 +48,7 @@
             "field": "date",
             "title": "Year",
             "scale": {
-                "scheme": "inferno"}
+                "scheme": "yelloworangebrown"}
             }
         
     }

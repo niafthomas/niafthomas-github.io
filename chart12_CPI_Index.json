@@ -1,15 +1,15 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "Japanese Yen to U.S. Dollar Spot Exchange Rate",
+    "description": "CPI: Total All Items for the U.S.",
     "title": {
-        "text": "Japanese Yen to U.S. Dollar Spot Exchange Rate",
-        "subtitle": "Source: FRED",
+        "text": "CPI Index",
+        "subtitle": "Total All Items for the U.S., Source: FRED",
         "subtitleFontStyle": "italic",
         "subtitleFontSize": 10,
         "anchor": "start"
     },
     "data": {
-        "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/data-Fred-DEXJPUS.json",
+        "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/data-Fred-CPALTT01USM659N.json",
         "format": {
             "type": "json",
             "property": "observations"
@@ -36,8 +36,7 @@
             "field": "value",
             "type": "quantitative",
             "title": "",
-            "scale": {
-                "domain": [0,400]
+            "scale": {"domain": [-3,16]
             },
             "axis": {
                 "grid": false,
@@ -50,7 +49,7 @@
             "field": "date",
             "title": "Year",
             "scale": {
-                "scheme": "inferno"}
+                "scheme": "purplebluegreen"}
             }
         
     }
