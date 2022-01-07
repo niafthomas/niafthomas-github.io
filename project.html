@@ -31,18 +31,37 @@ Portfolio
 
 <head>
 
-    <!-- /////////////////// END HEAD //////////////////////////////////// -->
+<!-- /////////////////// END HEAD //////////////////////////////////// -->
     
     
 
-    <!-- ///////////////////  START BODY //////////////////////////////////// -->
+<!-- ///////////////////  START BODY //////////////////////////////////// -->
     
-    <body>
-    </div class="main">
-    <!-- Title -->
-    <h1>Project</h1>
-    <h2>Student Number:1851280<span style="color: rgb(202, 213, 223); font-weight: 500;",h2>
-    </header>
-    
-    <!-- /////////////////// CONTAINERS WITH WEEK 1 WORK //////////////////////////////////// -->
-  
+<body>
+</div class="main">
+<!-- Title -->
+<h1>Project</h1>
+<h2>Student Number:1851280<span style="color: rgb(202, 213, 223); font-weight: 500;",h2>
+</header>
+
+<!--Chart showing the Share of Total Net Worth by the Top 1%-->
+<div class="chart" id="chart14">
+  <script>
+    var myChart14 = "Top1%.json";
+    vegaEmbed('#chart14', myChart14);
+  </script>
+</div>
+
+<div class="chart" id="chart15">
+  <script>
+    var myChart15 = "Bottom50%.json";
+    vegaEmbed('#chart15', myChart15);
+  </script>
+</div>
+
+
+
+</body>
+<!-- ///////////////////  END BODY //////////////////////////////////// -->
+
+</html>
