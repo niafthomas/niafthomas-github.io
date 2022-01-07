@@ -1,0 +1,60 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "values": [
+        {"Gini Coefficient →": "A", "Social Mobility Score →": "A", "color": "3", "Classification": "Poor Social Mobility, High Equality"},
+        {"Gini Coefficient →": "A", "Social Mobility Score →": "B", "color": "6", "Classification": "Average Social Mobility, High Equality"},
+        {"Gini Coefficient →": "A", "Social Mobility Score →": "C", "color": "9", "Classification": "High Social Mobility, High Equality"},
+        {"Gini Coefficient →": "B", "Social Mobility Score →": "A", "color": "2", "Classification": "Poor Social Mobility, Average Equality"},
+        {"Gini Coefficient →": "B", "Social Mobility Score →": "B", "color": "5", "Classification": "Average Social Mobility, Average Equality"},
+        {"Gini Coefficient →": "B", "Social Mobility Score →": "C", "color": "8", "Classification": "High Social Mobility, Average Equality"},
+        {"Gini Coefficient →": "C", "Social Mobility Score →": "A", "color": "1", "Classification": "Poor Social Mobility, Poor Equality"},
+        {"Gini Coefficient →": "C", "Social Mobility Score →": "B", "color": "4", "Classification": "Average Social Mobility, Poor Equality"},
+        {"Gini Coefficient →": "C", "Social Mobility Score →": "C", "color": "7", "Classification": "High Social Mobility, Poor Equality"}
+      ]
+    },
+    "mark": {"type": "rect"},
+    "config": {
+      "background": "transparent",
+      "view": {
+        "stroke": "transparent"
+        }
+    },
+    "height": 120,
+    "width": 120,
+    "encoding": {
+      "y": {
+        "field": "Gini Coefficient →",
+        "type": "nominal",
+        "axis": {
+          "domainColor": "transparent",
+          "labels": false,
+          "ticks": false,
+          "titleColor": "white"
+        }
+      },
+      "x": {
+        "field": "Social Mobility Score →",
+        "type": "nominal",
+        "axis": {
+          "domainColor": "transparent",
+          "labels": false,
+          "ticks": false,
+          "titleColor": "white"
+        }
+      },
+      "color": {
+        "legend": null,
+        "type": "nominal",
+        "field": "color",
+        "scale": {"range": ["#e8e8e8","#dfb0d6","#be64ac","#ace4e4","#a5add3","#8c62aa","#5ac8c8","#5698b9","#3b4994"]}
+      },
+      "tooltip": [
+          {
+            "field": "Classification", 
+            "type": "nominal", 
+            "title": "Interpretation"
+            }
+        ]
+    }
+}
