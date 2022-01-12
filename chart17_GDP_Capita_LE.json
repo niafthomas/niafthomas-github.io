@@ -1,0 +1,65 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  
+    "description": "Interactive Chart on GDP/Capita and Life Expectancy",
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/GDP_Capita%2CSM%2CLE%2CProductivity.csv",
+      "format": {"type": "csv"}
+    },
+  
+    "title": {
+      "text": "GDP/Capita and Life Expectancy in Europe",
+      "subtitle":"Source: World Bank",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+  
+    "height": 370,
+    "width": 350,
+    "transform":[
+          
+          {"filter": {
+            "field": "Country", 
+            "oneOf": ["Austria", "France", "Belgium",
+            "Germany","Italy","Bulgaria","United Kingdom","Croatia","Cyprus","Czech Republic","Denmark","Estonia","Finland","Greece","Hungary","Iceland","Latvia","Lithuania","Luxembourg","Malta","Netherlands","Norway","Portugal","Poland","Romania","Slovakia","Slovenia","Spain","Sweden","Switzerland"]}
+            }
+        ],
+  
+    "mark": {"type": "circle", "size":75},
+    
+     "encoding": {
+      "x": {"field": "GDP/Capita", "type": "quantitative", "title": "GDP/Capita (in $US)"},
+    
+      "y": {
+        "field": "Life Expectancy at Birth",
+        "type": "quantitative",
+        "scale": {"domain": [70, 90]},
+        "title": "Life Expectancy"
+      },
+  
+      "color":{
+        "field":"Country",
+        "type": "ordinal",
+        "title":null,
+        "scale": {"scheme": "turbo"}},
+  
+      "tooltip": [
+        {"field": "Country", "type": "ordinal", "title": "Country"},
+        {
+          "field": "GDP/Capita",
+          "type": "quantitative",
+          "title": "GDP/Capita",
+          "format": ",.0f"
+        },
+        {
+          "field": "Life Expectancy at Birth",
+          "type": "quantitative",
+          "title": "Life Expectancy",
+          "format": ",.0f"
+        }
+      ]
+    }
+}

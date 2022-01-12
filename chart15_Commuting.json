@@ -1,40 +1,60 @@
 { "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-    "description": "Impact of commute time on probability of leaving current job, Great Britain, 2004 to 2018",
+  "description": "Impact of commute time on probability of leaving current job, Great Britain, 2004 to 2018",
+
+  "title": {
+    "text": "The Commuting Gap",
+    "subtitle":["Great Britain, 2004 to 2018. Source: ONS"],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/CommutingTimes.csv",
+    "format":{"type":"csv"}},
+
+  "mark": {
+    "type":"circle",
+    "size":150,
+    "color":"rgb(0,67,167)",
+    "opacity":0.6},
   
-    "title": {
-      "text": "Impact of Commute Time on Probability of Leaving Current Job",
-      "subtitle":["Great Britain, 2004 to 2018. Source: ONS"],
-      "subtitleFontStyle":"italic",
-      "subtitleFontSize":10,
-      "anchor": "start",
-      "color": "black"
+  "height": 300,
+  "width": 310,
+
+"encoding": {
+    "x": {
+      "field": "Risk ratio based on 10 minute commute time", 
+      "type": "quantitative", 
+      "scale": {"domain": [1, 1.35]},
+      "title": "Likelihood of leaving current job compared with someone doing a 10-minute commute"},
+  
+    "y": {
+      "field": "Commuting time",
+      "type": "quantitative",
+      "title": "Commuting Time (minutes)"
     },
-  
-    "data": {
-      "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/CommutingTimes.csv",
-      "format":{"type":"csv"}},
-  
-    "mark": {
-      "type":"circle",
-      "size":150,
-      "color":"rgb(0,67,167)",
-      "opacity":0.6},
-    
-    "height": 300,
-    "width": 310,
-  
-    "encoding": {
-      "x": {
-        "field": "Risk ratio based on 10 minute commute time", 
+
+    "color":{
+      "field":"Gender",
+      "type": "nominal",
+      "title":null},
+
+    "tooltip": [
+      {"field": "Gender", "type": "nominal", "title": "Gender"},
+      {
+        "field": "Risk ratio based on 10 minute commute time",
         "type": "quantitative",
-        "scale": {"domain": [1, 1.35]},
-        "title":"Likelihood of leaving current job compared with someone doing a 10-minute commute"},
-  
-      "y": {
-        "field": "Commuting time", 
+        "title": "Risk ratio based on 10 minute commute time"
+      },
+      {
+        "field": "Commuting time",
         "type": "quantitative",
-        "title":"Commuting Time (minutes)"},
-        "color": {"field": "Gender", "type": "nominal"}
-     }
+        "title": "Commuting Time (m)",
+        "format": ",.0f"
+      }
+    ]
   }
+}
