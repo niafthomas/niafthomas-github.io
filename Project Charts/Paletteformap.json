@@ -30,7 +30,7 @@
           "domainColor": "transparent",
           "labels": false,
           "ticks": false,
-          "titleColor": "white"
+          "titleColor": "black"
         }
       },
       "x": {
@@ -40,7 +40,7 @@
           "domainColor": "transparent",
           "labels": false,
           "ticks": false,
-          "titleColor": "white"
+          "titleColor": "black"
         }
       },
       "color": {

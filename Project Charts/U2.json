@@ -1,0 +1,59 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A stacked bar chart conveying the educational attainment by highest level of education attained by parents",
+  
+    "title": {
+      "text": " Educational attainment by adults whereby either parent attained an upper secondary education",
+      "subtitle":["Source: OECD"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+  
+  "data": {
+      "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/Educational%20attainment%20by%20highest%20level%20of%20education%20attained%20by%20parents-U2.csv",
+      "format":{"type":"csv"}},
+    
+    "height": 300,
+    "width": 400,
+  
+  "transform": [
+  
+      {
+        "filter": {
+          "field": "Highest Level of Education Attained",
+          "oneOf": ["Below Upper Secondary", "Upper Secondary", "Tertiary"]
+        }
+      }
+    ],
+  
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "Country",
+        "type": "nominal",
+        "title": "Country",
+        "axis": {
+          "offset": 5,
+          "ticks": false,
+          "minExtent": 70,
+          "domain": false
+        }
+      },
+      "y": {
+        "field": "Highest level of education attained by adult (%)",
+        "type": "quantitative",
+        "scale": {"domain": [0, 80]},
+        "title": null
+      },
+      "color": {
+        "field": "Highest Level of Education Attained",
+        "type": "ordinal",
+        "scale": {
+          "range": ["#aec7e8", "#1f77b4", "#9467bd"]
+        },
+        "title": "Level of education attained"
+      }
+    }
+  }
