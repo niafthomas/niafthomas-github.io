@@ -12,7 +12,7 @@
   },
   
    "data": {
-    "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/ChinaGDPperCapita.csv",
+    "url": "Portfolio/Week3/ChinaGDPperCapita.csv",
     "format": {"type": "csv"}
   },
 

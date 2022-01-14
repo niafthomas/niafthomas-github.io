@@ -10,7 +10,7 @@
     },
   
     "data": {
-      "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/Social_Mobility.csv",
+      "url": "Project/Data/Social_Mobility.csv",
       "format": {"type": "csv"}
     },
     

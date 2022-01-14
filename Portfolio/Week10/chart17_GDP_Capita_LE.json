@@ -4,7 +4,7 @@
     "description": "Interactive Chart on GDP/Capita and Life Expectancy",
   
     "data": {
-      "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/GDP_Capita%2CSM%2CLE%2CProductivity.csv",
+      "url": "Project/Data/GDP_Capita,SM,LE,Productivity.csv",
       "format": {"type": "csv"}
     },
   

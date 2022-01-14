@@ -12,7 +12,7 @@
   },
 
   "data": {
-    "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/CommutingTimes.csv",
+    "url": "Portfolio/Week8/CommutingTimes.csv",
     "format":{"type":"csv"}},
 
   "mark": {
