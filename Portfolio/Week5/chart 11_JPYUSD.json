@@ -9,7 +9,7 @@
         "anchor": "start"
     },
     "data": {
-        "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/data-Fred-DEXJPUS.json",
+        "url": "Portfolio/Week5/data-Fred-DEXJPUS.json",
         "format": {
             "type": "json",
             "property": "observations"
