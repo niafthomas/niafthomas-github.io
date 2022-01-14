@@ -1,0 +1,90 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A ranged dot plot that uses 'layer' to convey the difference in PISA scores depdnding on your economic, cultural and social status",
+  
+    "title": {
+      "text": "Differences in student reading performance by socio-economic status",
+      "subtitle":["Source: OECD"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+  
+  "data": {
+      "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/OECD%20_Literacy_scores_by_gender_at_age_15.csv",
+      "format":{"type":"csv"}},
+    
+    "height": 600,
+    "width": 350,
+    "transform": [
+  
+      {
+        "filter": {
+          "field": "ESCS Score",
+          "oneOf": ["Bottom quarter of ESCS", "Top quarter of ESCS"]
+        }
+      }
+    ],
+  
+    "encoding": {
+      "x": {
+        "field": "Mean Pisa Score",
+        "type": "quantitative",
+        "scale": {"domain": [300, 600]},
+        "title": "Mean PISA Score"
+      },
+      "y": {
+        "field": "Country",
+        "type": "nominal",
+        "title": "Country",
+        "axis": {
+          "offset": 5,
+          "ticks": false,
+          "minExtent": 70,
+          "domain": false
+        }
+      }
+    },
+    "layer": [
+      {
+        "mark": "line",
+        "encoding": {
+          "detail": {
+            "field": "Country",
+            "type": "nominal"
+          },
+          "color": {"value": "#BBBBBB"}
+        }
+      },
+      {
+        "mark": {
+          "type": "point",
+          "filled": true
+        },
+        "encoding": {
+          "tooltip": [
+        {
+          "field": "Country",
+          "type": "nominal",
+          "title": "Country"
+        },
+        {
+          "field": "Difference in reading performance between students in the top quarter and students in the bottom quarter of ESCS",
+          "type": "quantitative",
+          "title": "Difference between students in the top and bottom quarter of ESCS"
+        }
+          ],
+          "color": {
+            "field": "ESCS Score",
+            "type": "nominal",
+            "title": null,
+            "scale": {"scheme": "bluepurple"}},
+          "size": {"value": 80},
+          "opacity": {"value": 1}
+          }
+        }
+      
+      ]
+  }
+  

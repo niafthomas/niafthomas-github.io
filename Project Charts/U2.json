@@ -3,7 +3,7 @@
     "description": "A stacked bar chart conveying the educational attainment by highest level of education attained by parents",
   
     "title": {
-      "text": " Educational attainment by adults whereby either parent attained an upper secondary education",
+      "text": " Educational attainment by adults whose parents attained an upper secondary education",
       "subtitle":["Source: OECD"],
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
@@ -15,8 +15,8 @@
       "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/Educational%20attainment%20by%20highest%20level%20of%20education%20attained%20by%20parents-U2.csv",
       "format":{"type":"csv"}},
     
-    "height": 300,
-    "width": 400,
+    "height": 350,
+    "width": 450,
   
   "transform": [
   
@@ -44,9 +44,23 @@
       "y": {
         "field": "Highest level of education attained by adult (%)",
         "type": "quantitative",
-        "scale": {"domain": [0, 80]},
+        "scale": {"domain": [0, 100]},
         "title": null
       },
+  
+      "tooltip": [
+        {
+          "field": "Country",
+          "type": "nominal",
+          "title": "Country"
+        },
+        {
+          "field": "Highest level of education attained by adult (%)",
+          "type": "quantitative",
+          "title": "Highest level of education attained by adult (%)"
+        }
+      ],
+  
       "color": {
         "field": "Highest Level of Education Attained",
         "type": "ordinal",
