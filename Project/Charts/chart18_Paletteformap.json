@@ -10,7 +10,7 @@
         {"Social Mobility Score →": "B", "Gini Coefficient →": "C", "color": "8", "Classification": "Average Social Mobility, Low Equality"},
         {"Social Mobility Score →": "C", "Gini Coefficient →": "A", "color": "1", "Classification": "Poor Social Mobility, High Equality"},
         {"Social Mobility Score →": "C", "Gini Coefficient →": "B", "color": "4", "Classification": "Poor Social Mobility, Average Equality"},
-        {"Social Mobility Score →": "C", "Gini Coefficient →": "C", "color": "7", "Classification": "Poor Social Mobility, High Equality"}
+        {"Social Mobility Score →": "C", "Gini Coefficient →": "C", "color": "7", "Classification": "Poor Social Mobility, Low Equality"}
       ]
     },
     "mark": {"type": "rect"},
@@ -30,7 +30,7 @@
           "domainColor": "transparent",
           "labels": false,
           "ticks": false,
-          "titleColor": "black"
+          "titleColor": "white"
         }
       },
       "x": {
@@ -40,7 +40,7 @@
           "domainColor": "transparent",
           "labels": false,
           "ticks": false,
-          "titleColor": "black"
+          "titleColor": "white"
         }
       },
       "color": {
