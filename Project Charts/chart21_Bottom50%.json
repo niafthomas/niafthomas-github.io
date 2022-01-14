@@ -92,7 +92,7 @@
         "axis": {
             "grid": true, 
             "labelSeparation": 25,
-            "format": "%", 
+            "format": ".0%", 
             "labelColor": "black",
             "tickColor": "#3c87b3", 
             "domainColor": "#3c87b3"},

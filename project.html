@@ -44,36 +44,50 @@ Portfolio
 <h2>Student Number:1851280<span style="color: rgb(202, 213, 223); font-weight: 500;",h2>
 </header>
 
+<!-- Map Chart -->
 
-<div id="chart17">
-  <script>
-      var myChart24 = "project/Paletteformap.json";
-      vegaEmbed('#chart17', myChart17);
-  </script>
-
-
+<div class="container">   
+  <div id="Chart18">
+      <script>
+          var myChart18 = "project/bivariatescale.json";
+          vegaEmbed('#chart18', myChart18);
+      </script>
+  
 </div>
-<iframe src="https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/4s0wprqrr3i3u6h/keplergl_cf1qep8.json"></iframe width="400" height="500">
-
+  <iframe src="https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/4s0wprqrr3i3u6h/keplergl_cf1qep8.json"></iframe>
+  
+  <div id="chart19">
+      <script>
+          var myChart19 = "project/chart18_Paletteformap.json";
+          vegaEmbed('#chart19', myChart19);
+      </script>
+  </div>
 </div> 
 
 
 <!--Chart showing the Share of Total Net Worth by the Top 1%-->
-<div class="chart" id="chart300">
+<div class="chart20" id="chart20">
   <script>
-    var myChart300 = "Top1%.json";
-    vegaEmbed('#chart300', myChart300);
+    var myChart300 = "project/chart20_Top1%.json";
+    vegaEmbed('#chart20', myChart20);
   </script>
 </div>
 
 <!--Chart showing the Share of Total Net Worth by the Bottom 50%-->
-<div class="chart" id="chart200">
+<div class="chart21" id="chart21">
   <script>
-    var myChart15 = "Bottom50%.json";
-    vegaEmbed('#chart200', myChart200);
+    var myChart15 = "project/chart21_Bottom50%.json";
+    vegaEmbed('#chart21', myChart21);
   </script>
 </div>
 
+<!-- The difference in PISA scores depdnding on your economic, cultural and social status -->
+<div class="chart22" id="chart22">
+  <script>
+    var myChart15 = "project/chart22_PISA.json";
+    vegaEmbed('#chart22', myChart22);
+  </script>
+</div>
 
 
 </body>
