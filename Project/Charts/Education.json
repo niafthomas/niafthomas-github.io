@@ -12,7 +12,7 @@
     },
   
   "data": {
-      "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/Project/Data/Level%20of%20Education%202.csv",
+      "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/Project/Data/Level%20of%20Education.csv",
       "format":{"type":"csv"}},
     
     "height": 350,
