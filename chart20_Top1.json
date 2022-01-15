@@ -1,5 +1,5 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.2.0.json",
   "description": "Interactive chart with year slider to view data from 1989 to 2021",
   "autosize": {"type": "fit-x", "contains": "padding"},
   "background": "#FFFFFF",
