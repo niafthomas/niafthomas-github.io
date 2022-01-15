@@ -1,7 +1,37 @@
+/* CSS files can can also be used to access e.g. fonts */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+/* Format my paragraph */
+
+/* My name */
+
+h1 {
+	color: #223fe7;
+	font-size: 80px;
+	margin-top: 30px;
+	margin-bottom: 0px;	
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif ;
+}
+/* First line */
+
+
+h2 {
+	color: #ffffff;
+	font-size: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;	
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif ;
+}
 
 body{
 
-    background-color: #122b39 ;
+    background-color: #94b4e4, ;
     max-width: 90%;
     margin: auto;
  
@@ -17,7 +47,7 @@ body{
     width: 6px;
   }
   ::-webkit-scrollbar-track {
-    background: #081521;
+    background: #569ac2;
   }
   ::-webkit-scrollbar-thumb {
     background: #FFFFFF;
@@ -37,32 +67,22 @@ body{
    display: grid;
  
  }
- 
- h1{
- 
-    color: rgb(219, 188, 188);
-    font-family: 'Poppins', sans-serif ;
-    font-size: 75px; 
-     font-weight: bold;
-     letter-spacing: -1px; 
-     line-height: 1; 
-     text-align: center;
+
+ .navbuttons {
+	display:flex;
+	justify-content:center;
+	margin-bottom: 10px;
+	margin-top: 10px;
  }
- 
- h2{
-    color:rgb(203, 221, 224);
-    font-family: 'Roboto', sans-serif;
-    line-height: 0; 
-    text-align: center;
- }
- 
+
  h3{
-    color:rgb(203, 221, 224);
-    font-family: 'Roboto', sans-serif;
+    color:#5680e9;
+    font-family: 'Poppins', sans-serif ;
     font-size: 20px;
     line-height: 0; 
     text-align: center;
  }
+ 
  
  /* --------------------------------------CONTENT IN BODY----------------------------------------------*/
  
@@ -74,7 +94,7 @@ body{
     gap: 30px 30px;
     margin-top: 30px;
     border-style: solid;
-    border-color: rgb(219, 188, 188);
+    border-color:#5680e9;
     padding: 30px;
     border-radius: 25px;
   }
@@ -91,3 +111,62 @@ body{
     padding: 20px;
     display: inline-block;
  }
+
+ /* Button style */
+container {
+	align-content: center;
+	justify-content: center;
+	flex-flow: row wrapq;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 3px;
+	border-color: #ffffff;
+	padding: 60px;
+	clear:both;
+
+}
+
+.button{
+	align-content: center;
+	flex-flow: center;
+	border-radius: 4px;
+	background-color: #223fe7;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 240px;
+	cursor: pointer;
+	margin: 5px;
+	transition: color 1s;
+	font-family: 'Poppins', sans-serif ;
+  }
+
+  .button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+
+  }
+  
+  .button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+
+  }
+
+  
+  .button:hover span {
+	padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
