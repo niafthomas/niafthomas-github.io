@@ -8,7 +8,7 @@
 /* My name */
 
 h1 {
-	color: #223fe7;
+	color: #569ac2;
 	font-size: 80px;
 	margin-top: 30px;
 	margin-bottom: 0px;	
@@ -21,25 +21,17 @@ h1 {
 
 h2 {
 	color: #ffffff;
-	font-size: 40px;
+	font-size: 30px;
 	margin-top: 10px;
 	margin-bottom: 10px;	
 	text-align: center;
-	font-weight: bold;
 	font-family: 'Poppins', sans-serif ;
 }
 
 body{
-
-    background-color: #94b4e4, ;
+    background-color: #abccdf;
     max-width: 90%;
     margin: auto;
- 
-    animation: fadeIn ease 2s;
-   -webkit-animation: fadeIn ease 2s;
-   -moz-animation: fadeIn ease 2s;
-   -o-animation: fadeIn ease 2s;
-   -ms-animation: fadeIn ease 2s;
  }
  
  
@@ -54,7 +46,7 @@ body{
     border-radius: 25px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(155, 155, 155);
+    background: #569ac2;
   }
  
  
@@ -76,7 +68,7 @@ body{
  }
 
  h3{
-    color:#5680e9;
+    color:#569ac2;
     font-family: 'Poppins', sans-serif ;
     font-size: 20px;
     line-height: 0; 
@@ -94,7 +86,7 @@ body{
     gap: 30px 30px;
     margin-top: 30px;
     border-style: solid;
-    border-color:#5680e9;
+    border-color:#569ac2;
     padding: 30px;
     border-radius: 25px;
   }
@@ -111,6 +103,8 @@ body{
     padding: 20px;
     display: inline-block;
  }
+
+ /* Buttons inspired by Freddie Lowe */
 
  /* Button style */
 container {
@@ -130,7 +124,7 @@ container {
 	align-content: center;
 	flex-flow: center;
 	border-radius: 4px;
-	background-color: #223fe7;
+	background-color: #569ac2;
 	border: 2px solid #ffffff;
 	color: #ffffff;
 	text-align: center;
