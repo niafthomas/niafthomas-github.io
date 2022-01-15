@@ -47,9 +47,9 @@ Project
     
 <!-- /////////////////// END NAVIGATION BUTTONS //////////////////////////////////// -->
 
-<container class="acontainer"></container>
-<h4>SOCIAL MOBILITY AROUND THE WORLD AND HOW IT AFFECTS DEVELOPMENT INDICATORS</h4>
-<container class="acontainer"></container>
+<container class="bcontainer">
+<h4>SOCIAL MOBILITY AROUND THE WORLD AND HOW IT EFFECTS DEVELOPMENT INDICATORS</h4>
+</container>
 
 <!-- Map Chart -->
 
@@ -71,30 +71,26 @@ Project
 
 
 <!--Chart showing the Share of Total Net Worth by the Top 1%-->
-
-
-
-<div id="chart20">
-  <script>
-      var myChart20 = "Project/Charts/chart20_Top1%.json";
-      vegaEmbed('#chart20', myChart20);
+<div class="chart" id="chart20">
+  <script>     
+  var myChart20 = "chart20_Top1%.json";
+    vegaEmbed('#chart20', myChart20);
   </script>
 </div>
 
+
 <!--Chart showing the Share of Total Net Worth by the Bottom 50%-->
-<div class="chart21" id="chart21">
+<div class="chart" id="chart21">
   <script>
-    var myChart21 = "/Users/niathomas/Documents/GitHub/niafthomas-github.io/Project/Charts/chart21_Bottom50%.json";
+    var myChart21 = "Project/Charts/chart21_Bottom50%.json";
     vegaEmbed('#chart21', myChart21);
   </script>
 </div>
 
-
-
 <!-- The difference in PISA scores depdnding on your economic, cultural and social status -->
 <div class="chart22" id="chart22">
   <script>
-    var myChart15 = "/Users/niathomas/Documents/GitHub/niafthomas-github.io/Project/Charts/chart22_PISA.json";
+    var myChart15 = "Project/Charts/chart22_PISA.json";
     vegaEmbed('#chart22', myChart22);
   </script>
 </div>
