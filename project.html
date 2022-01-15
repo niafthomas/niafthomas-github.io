@@ -13,9 +13,6 @@ Project
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 
-<!--Favicon-->
-<link rel="shortcut icon" type="image/png" href="favicon/favicon.ico">
-
 <!-- ///////////////////  HEAD //////////////////////////////////// -->
 
 <head>
@@ -51,7 +48,8 @@ Project
 <h4>SOCIAL MOBILITY AROUND THE WORLD AND HOW IT EFFECTS DEVELOPMENT INDICATORS</h4>
 </container>
 
-<!-- Map Chart -->
+<container class="acontainer"></container>
+<!-- World Map Gini, SM Chart -->
 
 
   <div id="Chart18">
@@ -69,11 +67,14 @@ Project
       </script>
   </div>
 
+</container>
 
+
+<container class="acontainer">
 <!--Chart showing the Share of Total Net Worth by the Top 1%-->
 <div class="chart" id="chart20">
   <script>     
-  var myChart20 = "chart20_Top1.json";
+  var myChart20 = "Project/Charts/chart20_Top1.json";
     vegaEmbed('#chart20', myChart20);
   </script>
 </div>
@@ -87,6 +88,9 @@ Project
   </script>
 </div>
 
+</container>
+
+<container class="acontainer"></container>
 <!-- The difference in PISA scores depdnding on your economic, cultural and social status -->
 <div class="chart22" id="chart22">
   <script>
@@ -95,6 +99,54 @@ Project
   </script>
 </div>
 
+<!-- Educational attaintment based on highest level of parent's education -->
+<div class="chart23" id="chart23">
+  <script>
+    var myChart23 = "Project/Charts/chart23_Education.json";
+    vegaEmbed('#chart23', myChart23);
+  </script>
+</div>
+
+</container>
+
+
+<container class="acontainer"></container>
+<!-- Europe Map HO, SM Chart -->
+<div id="Chart24">
+  <script>
+      var myChart24 = "Project/Charts/chart24_Paletteforeuropemap.json";
+      vegaEmbed('#chart24', myChart24);
+  </script>
+</div>
+<iframe src="https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/ignfp4xwqsgwkwa/keplergl_hxr8v28.json"></iframe>
+
+<div id="chart25">
+  <script>
+      var myChart25 = "Project/Charts/chart24_Paletteforeuropemap.json";
+      vegaEmbed('#chart25', myChart25);
+  </script>
+</div>
+
+</container>
+
+<container class="acontainer"></container>
+<!-- GDP/Capita and SM Reg -->
+
+<div id="chart26">
+  <script>
+      var myChart26 = "Project/Charts/chart26_GDPreg.json";
+      vegaEmbed('#chart26', myChart26);
+  </script>
+</div>
+
+<div id="chart27">
+  <script>
+      var myChart27 = "Project/Charts/chart27_LEReg.json";
+      vegaEmbed('#chart27', myChart27);
+  </script>
+</div>
+
+</container>
 
 </body>
 <!-- ///////////////////  END BODY //////////////////////////////////// -->
