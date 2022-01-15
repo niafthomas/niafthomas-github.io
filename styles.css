@@ -41,7 +41,7 @@ h3{
  h4{
     color:#ffffff;
     font-family: 'Poppins', sans-serif ;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 0; 
     text-align: center;
  }
@@ -78,6 +78,25 @@ body{
    display: grid;
  
  }
+
+ .acontainer {
+    
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    position: relative;
+    left: 120px;
+    width: 80%;
+    text-align: justify;
+    border: 3px solid #569ac2;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 30px;
+    right: 0px;
+
+}
 
  .navbuttons {
 	display:flex;
