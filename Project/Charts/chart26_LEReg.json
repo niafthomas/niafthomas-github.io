@@ -1,0 +1,107 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/Project/Data/GDP_Capita%2CSM%2CLE%2CProductivity.csv"
+    },
+    "height": 350,
+    "width": 400,
+    "title": {
+        "text": "Linear regression: Social Mobility on Life Expectancy at Birth",
+        "subtitle": "Source: World Economic Forum & World Bank",
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "anchor": "start",
+        "color": "#8e5caf",
+        "subtitleColor": "#8e5caf"
+    },
+    "layer": [
+        {
+            "mark": {
+                "type": "point",
+                "tooltip": {
+                    "content": "data"
+                },
+                "color": "#2f6b8d"
+            },
+            "encoding": {
+                "x": {
+                    "field": "Social Mobility",
+                    "title": "Social Mobility",
+                    "type": "quantitative",
+                    "axis": {
+                        "domain": true,
+                        "grid": false
+                    },
+                    "scale": {
+                        "domain": [
+                            45, 100
+                        ],
+                        "type": "sqrt"
+                    }
+                },
+                "y": {
+                    "field": "Life Expectancy at Birth",
+                    "title": "Life Expectancy",
+                    "type": "quantitative",
+                    "scale": {
+                        "domain": [
+                            70,
+                            90
+                        ]
+                    },
+                    "axis": {
+                        "grid": true
+                    }
+                }
+            }
+        },
+        {
+            "mark": {
+                "type": "line",
+                "color": "#8e5caf"
+            },
+            "transform": [
+                {
+                    "regression": "Social Mobility",
+                    "on": "Life Expectancy at Birth"
+                }
+            ],
+            "encoding": {
+                "x": {
+                    "field": "Social Mobility",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "Life Expectancy at Birth",
+                    "type": "quantitative"
+                }
+            }
+        },
+        {
+            "transform": [
+                {
+                    "regression": "Social Mobility",
+                    "on": "Life Expectancy at Birth",
+                    "params": true
+                },
+                {
+                    "calculate": "'R²: '+format(datum.rSquared, '.2f')",
+                    "as": "R2"
+                }
+            ],
+            "mark": {
+                "type": "text",
+                "color": "#2f6b8d",
+                "x": "width",
+                "align": "right",
+                "y": -10
+            },
+            "encoding": {
+                "text": {
+                    "type": "nominal",
+                    "field": "R2"
+                }
+            }
+        }
+    ]
+}

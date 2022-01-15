@@ -1,0 +1,93 @@
+
+body{
+
+    background-color: #122b39 ;
+    max-width: 90%;
+    margin: auto;
+ 
+    animation: fadeIn ease 2s;
+   -webkit-animation: fadeIn ease 2s;
+   -moz-animation: fadeIn ease 2s;
+   -o-animation: fadeIn ease 2s;
+   -ms-animation: fadeIn ease 2s;
+ }
+ 
+ 
+ ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #081521;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #FFFFFF;
+    border-radius: 25px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(155, 155, 155);
+  }
+ 
+ 
+ footer {
+    height: 100px
+ }
+ 
+ 
+ .pagecontainer {
+   display: grid;
+ 
+ }
+ 
+ h1{
+ 
+    color: rgb(219, 188, 188);
+    font-family: 'Poppins', sans-serif ;
+    font-size: 75px; 
+     font-weight: bold;
+     letter-spacing: -1px; 
+     line-height: 1; 
+     text-align: center;
+ }
+ 
+ h2{
+    color:rgb(203, 221, 224);
+    font-family: 'Roboto', sans-serif;
+    line-height: 0; 
+    text-align: center;
+ }
+ 
+ h3{
+    color:rgb(203, 221, 224);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 0; 
+    text-align: center;
+ }
+ 
+ /* --------------------------------------CONTENT IN BODY----------------------------------------------*/
+ 
+ /* Flexbox container with home page graphs */
+ .bcontainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;;
+    gap: 30px 30px;
+    margin-top: 30px;
+    border-style: solid;
+    border-color: rgb(219, 188, 188);
+    padding: 30px;
+    border-radius: 25px;
+  }
+  
+ 
+ /* Chart Format */
+ .chart-container {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-radius: 5px;
+    padding: 20px;
+    display: inline-block;
+ }

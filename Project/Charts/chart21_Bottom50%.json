@@ -1,107 +1,107 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "Interactive chart with year slider to view data from 1989 to 2021",
-    "autosize": {"type": "fit-x", "contains": "padding"},
-    "background": "#FFFFFF",
-    "height": 310,
-    "width": 450,
-    "padding": 0,
-    "title": {
-      "text": "Net Worth Held by the Bottom 50%",
-      "subtitle": "Source: FRED",
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
-      "anchor": "start",
-      "color": "#2f6b8d",
-      "subtitleColor": "#2f6b8d"
-    },
-    "data": {
-      "name": "myData",
-      "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/Project%20Charts/data-Fred-WFRBSB50215.json",
-      "format": {"type": "json", "property": "observations"}
-    },
-    "mark": {
-      "type": "area",
-      "cursor": "pointer",
-      "line": {"color": "#3c87b3"},
-  
-      "color": {
-        "x1": 1,
-        "y1": 1,
-        "x2": 1,
-        "y2": 0,
-        "gradient": "linear",
-        "stops": [
-          {
-            "offset": 0,
-            "color": "white"
-          },
-          {
-            "offset": 1,
-            "color": "#3c87b3"
-          }
-        ]
-      }
-    },
-    "transform": [
-      {"calculate": "year(datum.date)", "as": "year"},
-      {"filter": "datum.year>minYear"},
-      {"filter": "datum.year<maxYear"},
-      {"calculate": "datum.value/100", "as": "percent"}
-    ],
-    "params": [
-      {
-        "name": "minYear",
-        "value": 1989,
-        "bind": {
-          "input": "range",
-          "min": 1989,
-          "max": 2021,
-          "step": 1,
-          "name": "Start Year: "
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Interactive chart with year slider to view data from 1989 to 2021",
+  "autosize": {"type": "fit-x", "contains": "padding"},
+  "background": "#FFFFFF",
+  "height": 310,
+  "width": 450,
+  "padding": 0,
+  "title": {
+    "text": "Net Worth Held by the Bottom 50%",
+    "subtitle": "Source: FRED API",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#2f6b8d",
+    "subtitleColor": "#2f6b8d"
+  },
+  "data": {
+    "name": "myData",
+    "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/Project/Data/data-Fred-WFRBSB50215.json",
+    "format": {"type": "json", "property": "observations"}
+  },
+  "mark": {
+    "type": "area",
+    "cursor": "pointer",
+    "line": {"color": "#3c87b3"},
+
+    "color": {
+      "x1": 1,
+      "y1": 1,
+      "x2": 1,
+      "y2": 0,
+      "gradient": "linear",
+      "stops": [
+        {
+          "offset": 0,
+          "color": "white"
+        },
+        {
+          "offset": 1,
+          "color": "#3c87b3"
         }
-      },
-      {
-        "name": "maxYear",
-        "value": 2021,
-        "bind": {
-          "input": "range",
-          "min": 1989,
-          "max": 2021,
-          "step": 1,
-          "name": "End Year: "
-        }
-      }
-    ],
-    "encoding": {
-      "x": {
-        "field": "date",
-        "type": "temporal",
-        "title": null,
-        "axis": {
-        "grid": false, 
-        "labelSeparation": 25,
-        "labelColor": "black",
-        "tickColor": "#3c87b3", 
-        "domainColor": "#3c87b3"}
-      },
-      "y": {
-        "field": "percent",
-        "type": "quantitative",
-        "title": null,
-        "axis": {
-            "grid": true, 
-            "labelSeparation": 25,
-            "format": ".0%", 
-            "labelColor": "black",
-            "tickColor": "#3c87b3", 
-            "domainColor": "#3c87b3"},
-            "scale": {"domain": [0, 0.05]}
-      },
-  
-      "tooltip": [
-        {"field": "year", "type": "nominal", "title": "Year"},
-        {"field": "value", "type": "quantitative", "title": "Percentage"}
       ]
     }
+  },
+  "transform": [
+    {"calculate": "year(datum.date)", "as": "year"},
+    {"filter": "datum.year>minYear"},
+    {"filter": "datum.year<maxYear"},
+    {"calculate": "datum.value/100", "as": "percent"}
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1989,
+      "bind": {
+        "input": "range",
+        "min": 1989,
+        "max": 2021,
+        "step": 1,
+        "name": "Start Year: "
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 1989,
+        "max": 2021,
+        "step": 1,
+        "name": "End Year: "
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+      "grid": false, 
+      "labelSeparation": 25,
+      "labelColor": "black",
+      "tickColor": "#3c87b3", 
+      "domainColor": "#3c87b3"}
+    },
+    "y": {
+      "field": "percent",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+          "grid": true, 
+          "labelSeparation": 25,
+          "format": ".0%", 
+          "labelColor": "black",
+          "tickColor": "#3c87b3", 
+          "domainColor": "#3c87b3"},
+          "scale": {"domain": [0, 0.05]}
+    },
+
+    "tooltip": [
+      {"field": "Country", "type": "ordinal", "title": "Country"},
+      {"field": "value", "type": "quantitative", "title": "Percentage"}
+    ]
   }
+}

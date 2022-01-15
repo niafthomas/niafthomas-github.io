@@ -1,0 +1,105 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/Project/Data/GDP_Capita%2CSM%2CLE%2CProductivity.csv"
+    },
+    "height": 350,
+    "width": 400,
+    "title": {
+        "text": "Linear regression: Social Mobility on GDP/Capita",
+        "subtitle": "Source: World Economic Forum & World Bank",
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "anchor": "start",
+        "color": "#2f6b8d",
+        "subtitleColor": "#2f6b8d"
+    },
+
+    "layer": [
+        {
+            "mark": {
+                "type": "point",
+                "tooltip": {
+                    "content": "data"
+                },
+                "color": "purple"
+            },
+
+            "encoding": {
+                "x": {
+                    "field": "Social Mobility",
+                    "title": "Social Mobility",
+                    "type": "quantitative",
+                    "axis": {
+                        "tickColor": "#3c87b3",
+                        "domain": true,
+                        "grid": false
+                    },
+                    "scale": {
+                        "domain": [
+                            45, 100
+                        ],
+                        "type": "sqrt"
+                    }
+                },
+                "y": {
+                    "field": "GDP/Capita",
+                    "title": "GDP/Capita (in $US)",
+                    "type": "quantitative",
+                    "axis": {
+                      "tickColor": "#3c87b3",
+                        "grid": true
+                    }
+                }
+            }
+        },
+        {
+            "mark": {
+                "type": "line",
+                "color": "#3c87b3"
+            },
+            "transform": [
+                {
+                    "regression": "Social Mobility",
+                    "on": "GDP/Capita"
+                }
+            ],
+            "encoding": {
+                "x": {
+                    "field": "Social Mobility",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "GDP/Capita",
+                    "type": "quantitative"
+                }
+            }
+        },
+        {
+            "transform": [
+                {
+                    "regression": "Social Mobility",
+                    "on": "Life Expectancy at Birth",
+                    "params": true
+                },
+                {
+                    "calculate": "'R²: '+format(datum.rSquared, '.2f')",
+                    "as": "R2"
+                }
+            ],
+            "mark": {
+                "type": "text",
+                "color": "purple",
+                "x": "width",
+                "align": "right",
+                "y": -10
+            },
+            "encoding": {
+                "text": {
+                    "type": "nominal",
+                    "field": "R2"
+                }
+            }
+        }
+    ]
+}
