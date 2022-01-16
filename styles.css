@@ -211,6 +211,23 @@ container {
       font-family: 'Poppins', sans-serif;
       }
 
+      .button3{
+        align-content: center;
+        flex-flow: center;
+        border-radius: 4px;
+        background-color: #569ac2;
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 15%;
+        cursor: pointer;
+        margin: 5px;
+        transition: color 1s;
+        font-family: 'Poppins', sans-serif;
+        }
+
 .button span {
 	cursor: pointer;
 	display: inline-block;
