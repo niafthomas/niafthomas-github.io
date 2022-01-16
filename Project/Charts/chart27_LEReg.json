@@ -7,7 +7,7 @@
     "width": 400,
     "title": {
         "text": "Linear regression: Social Mobility on Life Expectancy at Birth",
-        "subtitle": "Source: World Economic Forum & World Bank",
+        "subtitle": "Source: World Economic Forum & World Bank API",
         "subtitleFontStyle": "italic",
         "subtitleFontSize": 10,
         "anchor": "start",
