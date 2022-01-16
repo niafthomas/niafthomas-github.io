@@ -1,0 +1,80 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  
+  "title": {
+      "text": "Working age population",
+      "subtitle":"Total, % of population, 1970 – 2020, Source: OECD",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+  
+    "description": "G7 Unemployment",
+    "data": {
+      "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/Portfolio/Week10/DP_LIVE_16012022225926220.csv",
+      "format": {"type": "csv"}
+    },
+  
+    "height": 370,
+    
+    "width": 350,
+    
+    "mark": {"type": "line", "width":10},
+    
+    "selection": {
+      "Region": {
+        "type": "single",
+        "fields": ["LOCATION"],
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "CAN",
+            "FRA",
+            "DEU",
+            "ITA",
+            "JPN",
+            "GBR",
+            "USA"
+          ],
+          "name": "Pick a Country: "
+        }
+      }
+    },
+    "transform": [
+      
+      {"filter": {"selection": "Region"}},
+      {
+        "filter": {
+          "field": "TIME",
+          "range": [
+            {"year": 1994},
+            {"year": 2019}
+          ]
+        }
+      }
+    ],
+  
+    "encoding": {
+      "x": {
+        "field": "TIME", 
+        "type": "temporal", 
+        "title": null},
+      "y": {
+        "field": "Value",
+        "type": "quantitative",
+        "scale": {"domain": [56, 74]},
+        "title": null
+      },
+      
+        
+      "color": {
+        "field": "LOCATION",
+        "type": "nominal",
+        "title": "Country",
+        "legend": {"orient": "right"},
+        "scale": {"scheme": "viridis"}
+      }
+    }
+}

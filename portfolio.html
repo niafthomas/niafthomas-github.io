@@ -303,7 +303,7 @@ Portfolio
 
 <container class="bcontainer">
 
-  <div class="text-level-A">Chart seventeen shows the relationship between GDP per capita and life expectancy in Europe. Hover over the dots to see that specific country data. Chart eighteen is an interactive map representing social mobility and income inequality.</a> 
+  <div class="text-level-A">Chart seventeen shows the relationship between GDP per capita and life expectancy in Europe. Hover over the dots to see that specific country data. Chart eighteen is an interactive chart looking at the working age population in various countries.</a> 
 
   </div>
 
@@ -315,22 +315,12 @@ Portfolio
   </script>
 </div>
 
-<!-- Map Chart -->
-
-
-  <div id="Chart18">
-    <script>
-        var myChart18 = "Project/Charts/chart18_Paletteforworldmap.json";
-        vegaEmbed('#chart18', myChart18);
-    </script>
-</div>
-<embed type="text/html" src="Project/Data/World kepler.gl.html" width="800" height="400">
-
-<div id="chart19">
-    <script>
-        var myChart19 = "Project/Charts/chart18_Paletteforworldmap.json";
-        vegaEmbed('#chart19', myChart19);
-    </script>
+<!-- Working Age Population Chart -->
+<div class="chart" id="chart28">
+  <script>
+    var myChart28 = "Portfolio/Week10/Workingage.json";
+    vegaEmbed('#chart28', myChart28);
+  </script>
 </div>
 
 </container>
