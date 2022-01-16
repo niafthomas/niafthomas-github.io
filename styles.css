@@ -203,3 +203,15 @@ container {
 	opacity: 1;
 	right: 0;
   }
+
+  .text-level-A, .text{
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif ;
+    margin-bottom: 10px;
+    clear: left;
+    width: 100%;
+  }
