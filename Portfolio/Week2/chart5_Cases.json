@@ -11,7 +11,7 @@
   },
   
    "data": {
-    "url": "https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/Cases.csv",
+    "url": "Portfolio/Week2/Cases.csv",
     "format": {"type": "csv"}
   },
 
