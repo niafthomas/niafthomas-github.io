@@ -1,4 +1,0 @@
-<div class="text-level-A">This <a class="textLink"
-    href="https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/ignfp4xwqsgwkwa/keplergl_hxr8v28.json
-" style="color:#569ac2">choropleth map</a> was produced by utilising BeautifulSoup to scrape two datasets from Wikipedia and merging them through pandas, making it fully automated. I used Wikipedia because of the lack of sources that provide data for all the countries required.</a> 
-  </div>
