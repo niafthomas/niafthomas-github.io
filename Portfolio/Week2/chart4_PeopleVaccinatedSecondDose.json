@@ -3,7 +3,7 @@
     
     "title": {
       "text": "COVID-19 Vaccinations",
-      "subtitle":"Number of people vaccinated by second dose",
+      "subtitle":"Number of people vaccinated by second dose, API",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
