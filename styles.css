@@ -141,6 +141,7 @@ body{
 	justify-content:center;
 	margin-bottom: 10px;
 	margin-top: 10px;
+  width: 100%;
  }
  
  /* Buttons inspired by Freddie Lowe */
@@ -175,6 +176,23 @@ container {
 	transition: color 1s;
 	font-family: 'Poppins', sans-serif ;
   }
+
+  .button1{
+    align-content: center;
+    flex-flow: center;
+    border-radius: 4px;
+    background-color: #569ac2;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 20%;
+    cursor: pointer;
+    margin: 5px;
+    transition: color 1s;
+    font-family: 'Poppins', sans-serif;
+    }
 
 .button span {
 	cursor: pointer;
