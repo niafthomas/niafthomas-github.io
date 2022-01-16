@@ -1,5 +1,45 @@
+<!--Kepler MAP-->
+
 <div class="navbuttons">
     <button class="button" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1mUsV3C7Xkfb6bBG5wz_vaq-LijlBhnHJ?usp=sharing'"><span>Code </span></button>
     <button class="button" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1J5t-IekoWQXqeWwUgnN6TTKkUcJsIG1T?usp=sharing'"><span>Code </span></button>
+
+</div>
+
+
+<!--Fred APIs-->
+
+<div class="navbuttons">
+    <button class="button" style="vertical-align:middle" onclick="location.href='https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/Project/Data/data-Fred-WFRBST01134.json'"><span>Top 1% API </span></button>
+    <button class="button" style="vertical-align:middle" onclick="location.href='https://raw.githubusercontent.com/niafthomas/niafthomas.github.io/main/Project/Data/data-Fred-WFRBSB50215.json'"><span>Bottom 50% API </span></button>
+    <button class="button" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1iMGUqE87p5y6GLreHl6DuXLZF3frelnb?usp=sharing'"><span>Code </span></button>
+
+</div>
+
+<!--PISA-->
+
+<div class="navbuttons">
+    <button class="button" style="vertical-align:middle" onclick="location.href='https://www.oecd.org/els/family/CO_3_4_Literacy_scores_gender_age_15.pdf'"><span>Source </span></button>
+
+</div>
+
+<!--Education-->
+<div class="navbuttons">
+    <button class="button" style="vertical-align:middle" onclick="location.href='https://www.oecd.org/els/family/CO3_1_Educational_attainment_by_gender.pdf'"><span>Source </span></button>
+
+</div>
+
+<!--Housing Map-->
+
+<div class="navbuttons">
+    <button class="button" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1PEwUsF4ztPy12k3rIK-ktK_k7UsSNLcX?usp=sharing'"><span>Code </span></button>
+    <button class="button" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1Pe7sD47ygbQxZrDlk-ECmPH3SUXrUrfQ?usp=sharing'"><span>Code </span></button>
+
+</div>
+
+<!--Regressions-->
+
+<div class="navbuttons">
+    <button class="button" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/140WkHBqB87KUFarQiEBbfApjFnxs_aJ6?usp=sharing'"><span>Code </span></button>
 
 </div>
