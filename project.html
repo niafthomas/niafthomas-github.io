@@ -52,7 +52,7 @@ Project
 <container class="acontainer">
 </container>
 
-<div class="text-level-A">Text here</a> 
+<div class="text-level-A">Social Mobility represents the equality of opportunity. It refers to the difference in economic or social status between parents and their children. This project aims to analyse the extent to which social mobility is correlated with a variety of development indicators.</a> 
 </div>
 
 
@@ -61,7 +61,9 @@ Project
 <!-- World Map Gini, SM Chart -->
 <container class="bcontainer">
 
-  <div class="text-level-A">Text here about income inequality</a> 
+  <div class="text-level-A">This <a class="textLink"
+    href="https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/m0rk00v69xyla9s/keplergl_krl6gi.json
+" style="color:#569ac2">choropleth map</a> shows the relationship between social mobility and income inequality. The social mobility data was scraped using Python from Wikipedia (derived from World Economic Forum). The code is fully automatic as I used the World Bank Data python library to download data on the Gini coefficient from the World Bank API. There were many gaps in the data for some countries and duplicates for others, so I used data from 2010 only and used the most recent values in Python. I merged the datasets in pandas, converted the TopoJSON file to a GeoJSON, and uploaded the file straight to Kepler.</a> 
   </div>
 
   <div id="Chart18">
