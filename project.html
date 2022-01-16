@@ -51,7 +51,7 @@ Project
 
 
 
-<div class="text-level-A">Social Mobility represents the equality of opportunity. It refers to the difference in economic or social status between parents and their children. This project aims to analyse the extent to which social mobility is correlated with a variety of development indicators.</a> 
+<div class="text-level-A">Social mobility refers to the difference in economic or social status between parents and their children. This project aims to analyse the extent to which social mobility is correlated with a variety of development indicators.</a> 
 </div>
 
 <container class="acontainer">
@@ -63,7 +63,7 @@ Project
 
   <div class="text-level-A">This <a class="textLink"
     href="https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/m0rk00v69xyla9s/keplergl_krl6gi.json
-" style="color:#569ac2">choropleth map</a> shows the relationship between social mobility and income inequality. The social mobility data was scraped using Python from Wikipedia (derived from World Economic Forum). The code is fully automatic as I used the World Bank Data python library to download data on the Gini coefficient from the World Bank API. There were many gaps in the data for some countries and duplicates for others, so I used data from 2010 only and used the most recent values in Python. I merged the datasets in pandas, converted the TopoJSON file to a GeoJSON, and uploaded the file straight to Kepler.</a> 
+" style="color:#569ac2">choropleth map</a> shows the relationship between social mobility and income inequality. The social mobility data was scraped using Python from Wikipedia (derived from World Economic Forum). The data will refresh automatically when the code is run as I used the World Bank Data python library to download data on the Gini coefficient from the World Bank API. There were many gaps in the data for some countries and duplicates for others, so I used data from 2010 only and used the most recent values in Python. I merged the datasets in pandas, converted the TopoJSON file to a GeoJSON, and uploaded the file to Kepler.</a> 
   </div>
 
   <div id="Chart18">
@@ -82,8 +82,8 @@ Project
   </div>
 
   <div class="navbuttons">
-    <button class="button1" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1mUsV3C7Xkfb6bBG5wz_vaq-LijlBhnHJ?usp=sharing'"><span>Code </span></button>
-    <button class="button1" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1J5t-IekoWQXqeWwUgnN6TTKkUcJsIG1T?usp=sharing'"><span>Code </span></button>
+    <button class="button1" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1mUsV3C7Xkfb6bBG5wz_vaq-LijlBhnHJ?usp=sharing'"><span>Data code </span></button>
+    <button class="button1" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1J5t-IekoWQXqeWwUgnN6TTKkUcJsIG1T?usp=sharing'"><span>Kepler map code</span></button>
 
 </div>
 
@@ -133,10 +133,10 @@ Project
 <h5>EDUCATION</h5>
 <container class="bcontainer">
 
-  <div class="text-level-A">The data for these charts came from the OECD. The OECD has a poor API integration making it difficult to get the data using XML requests, so instead, I downloaded the data locally. The OECD measures educational performance using PISA scores. PISA is an international survey providing a cross-national comparison of student performance. The PISA assessment also provides an index of students' economic, social, and cultural status (ESCS) by combining parents' educational level, parent's labor market status, and household possessions. The higher the ESCS score, the more advantaged that student is.</a> 
+  <div class="text-level-A">The data for these charts came from the OECD. The OECD has a poor API integration making it difficult to get the data using XML requests, so instead, I downloaded the data locally. The OECD measures educational performance using PISA scores. PISA is an international survey providing a cross-national comparison of student performance. The PISA assessment also provides an index of students' economic, social, and cultural status (ESCS) by combining parents' educational level, parents' labor market status, and household possessions. The higher the ESCS score, the more advantaged that student is.</a> 
   </div>
 
-  <div class="text-level-A">Across all OECD countries, students with high ESCS scores perform significantly better than students with low scores. The difference is especially large in countries such as Israel and Luxembourg where the difference between PISA scores between the top and bottom quarters of ESCS is greater than 120 points.</a> 
+  <div class="text-level-A">Across all OECD countries, students with high ESCS scores perform significantly better than students with low scores. The difference is especially large in countries such as Israel and Luxembourg, where the difference between PISA scores between the top and bottom quarters of ESCS is greater than 120 points.</a> 
   </div>
 
 <!--Education Charts-->
@@ -198,14 +198,14 @@ Project
 </div>
 
 <div class="navbuttons">
-  <button class="button1" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1PEwUsF4ztPy12k3rIK-ktK_k7UsSNLcX?usp=sharing'"><span>Code </span></button>
-  <button class="button1" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1Pe7sD47ygbQxZrDlk-ECmPH3SUXrUrfQ?usp=sharing'"><span>Code </span></button>
+  <button class="button1" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1PEwUsF4ztPy12k3rIK-ktK_k7UsSNLcX?usp=sharing'"><span>Data download code </span></button>
+  <button class="button1" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1Pe7sD47ygbQxZrDlk-ECmPH3SUXrUrfQ?usp=sharing'"><span>Kepler map code </span></button>
 
 </div>
 
 <div class="text-level-A">This <a class="textLink"
   href="https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/ignfp4xwqsgwkwa/keplergl_hxr8v28.json
-" style="color:#569ac2">choropleth map</a> was produced by utilising BeautifulSoup to scrape two datasets from Wikipedia and merge them through pandas, making it fully automated. I used Wikipedia due to the lack of sources that provide data for all the countries required. I used Folium to make the Kepler maps visible on a mobile phone, but it lost its interactivity, so I decided not to use it.</a> 
+" style="color:#569ac2">choropleth map</a> was produced by utilising BeautifulSoup to scrape two datasets from Wikipedia and merge them through pandas, making it fully easily updatable. I used Wikipedia due to the lack of sources that provide data for all the countries required. I tried using Folium to make the Kepler maps visible on a mobile phone, but since it lost its interactivity, it was not used.</a> 
 </div>
 
 </container>

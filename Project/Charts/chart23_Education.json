@@ -34,6 +34,7 @@
     "facet": {
     "field": "Either parent level of education",
     "type": "ordinal",
+    "sort": null,
     "columns": 3,
     "title" : "Highest Level of Parent's Education"
   },
@@ -46,7 +47,8 @@
         "offset": 5,
         "ticks": false,
         "minExtent": 70,
-        "domain": false
+        "domain": false,
+        "labelOverlap": "parity"
       }
     },
     "y": {
