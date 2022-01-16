@@ -55,6 +55,7 @@ h3{
 }
 
 
+
 body{
     background-color: #abccdf;
     max-width: 90%;
@@ -106,14 +107,6 @@ body{
     margin-top: 10px;
 
 }
-
- .navbuttons {
-	display:flex;
-	justify-content:center;
-	margin-bottom: 10px;
-	margin-top: 10px;
- }
- 
  
  /* --------------------------------------CONTENT IN BODY----------------------------------------------*/
  
@@ -143,6 +136,13 @@ body{
     display: inline-block;
  }
 
+ .navbuttons {
+	display:flex;
+	justify-content:center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+ }
+ 
  /* Buttons inspired by Freddie Lowe */
 
  /* Button style */
@@ -176,7 +176,7 @@ container {
 	font-family: 'Poppins', sans-serif ;
   }
 
-  .button span {
+.button span {
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
@@ -184,7 +184,7 @@ container {
 
   }
   
-  .button span:after {
+.button span:after {
 	content: '\00bb';
 	position: absolute;
 	opacity: 0;
@@ -195,7 +195,7 @@ container {
   }
 
   
-  .button:hover span {
+.button:hover span {
 	padding-right: 25px;
   }
   

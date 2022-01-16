@@ -1,0 +1,5 @@
+<div class="navbuttons">
+    <button class="button" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1mUsV3C7Xkfb6bBG5wz_vaq-LijlBhnHJ?usp=sharing'"><span>Code </span></button>
+    <button class="button" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1J5t-IekoWQXqeWwUgnN6TTKkUcJsIG1T?usp=sharing'"><span>Code </span></button>
+
+</div>
